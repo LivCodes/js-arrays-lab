@@ -66,8 +66,15 @@ function makeTitle(str) {
 console.log(makeTitle("How can mirrors be real if our eyes aren't real"));
 
 // Question 6
-function gimme() {
+function gimme(index) {
   // Write your code here
+  let arr = [];
+  arr.push(index[0],index[1],index[2]);
+  let x = index.sort(function(index, y){
+    return index - y;
+  });
+  
+  return arr.indexOf(x[1]);
 }
 
 // Do NOT touch or write anything below this line

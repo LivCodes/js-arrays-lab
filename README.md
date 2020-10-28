@@ -71,7 +71,8 @@ Then run `npm test` to see the results.
     makeTitle("most trees are blue"); // "Most Trees Are Blue"
     ```
 
-6. Write a function that when provided an array of three numbers, returns the index of the numerical element that lies between the other two elements.
+6. Write a function that when provided an array of three numbers,
+returns the index of the numerical element that lies between the other two elements.
 
     Examples:
     ```javascript
