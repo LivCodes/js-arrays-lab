@@ -53,9 +53,17 @@ function abbrevName(str) {
 console.log(abbrevName("Sam Harris"));
 
 // Question 5
-function makeTitle() {
+function makeTitle(str) {
   // Write your code here
+  if (typeof str === 'string') {
+    let names = str.split(' ');
+    for(let i = 0, namesLength = names.length; i < namesLength; i++){
+      names[i] = names[i][0].toUpperCase() + names[i].slice(1);
+    }
+    return names.join(' ');
+  }
 }
+console.log(makeTitle("How can mirrors be real if our eyes aren't real"));
 
 // Question 6
 function gimme() {
