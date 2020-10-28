@@ -16,9 +16,14 @@ function average(numbers) {
 average([11,12,13]);
 
 // Question 2
-function combineArrays() {
+function combineArrays(arr1, arr2) {
   // Write your code here
+  let arr3 = arr1.concat(arr2);
+  return arr3;
+  
 }
+console.log(combineArrays(["Ann", true, 4], [null, "Reuben"]));
+
 
 // Question 3
 function arrayPlusArray() {
