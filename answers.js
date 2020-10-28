@@ -26,10 +26,19 @@ console.log(combineArrays(["Ann", true, 4], [null, "Reuben"]));
 
 
 // Question 3
-function arrayPlusArray() {
+function arrayPlusArray(num1, num2) {
   // Write your code here
-}
+  let sum = 0;
+  let sum2 = 0;
+  
+  
+  sum += num1[0] + num1[1] + num1[2];
+  sum2 += num2[0] + num2[1] + num2[2];
+  let total = sum + sum2;
+  return total;
+  }
 
+console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]));
 // Question 4
 function abbrevName() {
   //Write your code here
