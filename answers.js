@@ -1,7 +1,19 @@
 // Question 1
-function average() {
+function average(numbers) {
   // Write your code here
+  let sum = 0;
+  for(let i = 0; i < numbers.length; i++){
+    sum += numbers[i];
+    if(numbers[i] === []){
+        return sum;
 }
+
+    console.log(sum);
+    
+  }
+    return sum/numbers.length;
+}
+average([11,12,13]);
 
 // Question 2
 function combineArrays() {
