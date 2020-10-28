@@ -39,10 +39,18 @@ function arrayPlusArray(num1, num2) {
   }
 
 console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]));
+
+
 // Question 4
-function abbrevName() {
+function abbrevName(str) {
   //Write your code here
+  if (typeof str === 'string') {
+    let names = str.split(' ');
+    return `${names[0][0]}.${names[1][0]}`.toUpperCase();
+  }
 }
+
+console.log(abbrevName("Sam Harris"));
 
 // Question 5
 function makeTitle() {
